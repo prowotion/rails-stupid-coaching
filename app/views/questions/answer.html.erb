@@ -1,6 +1,15 @@
-<h1>Your coach's answer</h1>
+<div class="container m-3">
+  <h1>Your coach's answer</h1>
 
-<p><strong>You:</strong> <%= @question %></p>
-<p><strong>Coach:</strong> <%= @answer %></p>
+  <div class="border-start border-5 border-muted my-3 px-3 py-1">
+    <p><%= @question %></p>
+    <p>-You</p>
+  </div>
 
-<%= link_to 'ask a new question', '/ask' %>
+<div class="border-start border-5 border-muted my-3 px-3 py-1" id="coach-answer">
+    <p><%= @answer %></p>
+    <p>-Your coach</p>
+  </div>
+
+  <%= link_to 'ask a new question', '/ask' %>
+</div>
